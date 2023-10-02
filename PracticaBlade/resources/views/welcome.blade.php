@@ -7,6 +7,10 @@
 
 @section('contenido')
 <h1 class="display-1 text-center text-danger mt-5"> HOME </h1>
+
 @endsection
 
+<div class="container mx-auto">
+    <x-alert />
+</div>
 
