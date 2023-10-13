@@ -1,11 +1,11 @@
 <?php
 
-use Illuminate\Controllers\Facades\Route;
+use Illuminate\Support\Facades\Route; // Corregir el uso de la clase Route
 use App\Http\Controllers\diarioController;
 
-Route::get('/',[diarioController::class,'metodoInicio'] )->name('apodoInicio');
-Route::get('/formulario',[diarioController::class,'metodoFormulario'])->name('apodoFormulario');
-Route::get('/recuerdos',[diarioController::class,'metodoRecuerdo'])->name('apodoFormulario');
+Route::get('/', [diarioController::class, 'metodoInicio'])->name('apodoInicio');
+Route::get('/formulario', [diarioController::class, 'metodoFormulario'])->name('apodoFormulario');
+Route::get('/recuerdos', [diarioController::class, 'metodoRecuerdo'])->name('apodoRecuerdo'); // Corregir el nombre de la ruta
 
 /*
 |--------------------------------------------------------------------------
