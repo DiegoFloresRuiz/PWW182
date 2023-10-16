@@ -7,6 +7,17 @@ Route::get('/', [diarioController::class, 'metodoInicio'])->name('apodoInicio');
 Route::get('/formulario', [diarioController::class, 'metodoFormulario'])->name('apodoFormulario');
 Route::get('/recuerdos', [diarioController::class, 'metodoRecuerdo'])->name('apodoRecuerdo'); // Corregir el nombre de la ruta
 
+Route::post('/guardarRecuerdos', [diarioController::class, 'metodoGuardar'])->name('guardar');
+
+/*Route::controller(diarioController::class)->group(function (){
+    
+    Route::get('/', 'metodoInicio')->name('apodoInicio');
+    
+    Route::get('/formulario','metodoFormulario')->name('apodoFormulario');
+
+    Route::get('/recuerdos', 'metodoRecuerdo')->name('apodoRecuerdo');
+});*/
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
