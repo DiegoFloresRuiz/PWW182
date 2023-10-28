@@ -8,7 +8,7 @@ class NoticiaLiteraria extends Controller
 {
     //
     public function metodoInicio(){
-        return view('inicio');
+        return view('/');
     }
 
     public function metodoFormulario(){
@@ -19,7 +19,7 @@ class NoticiaLiteraria extends Controller
         return view('welcome');  
     }
   
-    public function metodoGuardar(validadorFormularioDiario $req){
+    public function metodoGuardar(NoticiaLiteraria $req){
 
         /*$validated = $req->validate([
             'txtTitulo' => 'required|max:255',
